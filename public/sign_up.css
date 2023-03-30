@@ -1,0 +1,95 @@
+* {
+    Margin: 0;
+    Padding: 0;
+    Box-Sizing: Border-Box;
+    Font-Family: "Poppins", Sans-Serif;
+}
+
+
+Section {
+    Display: Flex;
+    Min-Height: 100vh;
+    Align-Items: Center;
+    Justify-Content: Center;
+    Background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+Section .Colour {
+    Position: Absolute;
+    Filter: Blur(150px);
+}
+
+.Container {
+    Width: 400px;
+    Display: Flex;
+    Min-Height: 400px;
+    Position: Relative;
+    Border-Radius: 10px;
+    Align-Items: Center;
+    Justify-Content: Center;
+    Backdrop-Filter: Blur(5px);
+    Background: Rgba(255, 255, 255, 0.1);
+    Box-Shadow: 0 25px 45px Rgba(0, 0, 0, 0.1);
+    Border: 1px Solid Rgba(255, 255, 255, 0.5);
+    Border-Right: 1px Solid Rgba(255, 255, 255, 0.2);
+    Border-Bottom: 1px Solid Rgba(255, 255, 255, 0.2);
+}
+
+.Form {
+    Width: 100%;
+    Height: 100%;
+    Padding: 40px;
+    Position: Relative;
+}
+
+::Placeholder {
+    Color: white;
+}
+
+.Form H2 {
+    Color: #Fff;
+    Font-Size: 24px;
+    Font-Weight: 600;
+    Position: Relative;
+    Letter-Spacing: 1px;
+    Margin-Bottom: 40px;
+}
+
+.Form H2::Before {
+    Left: 0;
+    Width: 80px;
+    Height: 4px;
+    Content: "";
+    Bottom: -10px;
+    Background: #Fff;
+    Position: Absolute;
+}
+
+.Form .Input__box {
+    Width: 100%;
+    Margin-Top: 20px;
+}
+
+.Form .Input__box Input {
+    Width: 100%;
+    Color: black;
+    Outline: None;
+    Font-Size: 16px;
+    Padding: 10px 20px;
+    Letter-Spacing: 1px;
+    Border-Radius: 35px;
+    Border: 1px Solid Rgba(255, 255, 255, 0.2);;
+    Box-Shadow: 0 5px 15px Rgba(0, 0, 0, 0.05);
+    
+}
+
+
+
+.Form .Input__box Input[Type="Submit"] {
+    Color: #666;
+    Cursor: Pointer;
+    Background: #Fff;
+    Max-Width: 100px;
+    Font-Weight: 600;
+    Margin-Bottom: 20px;
+}
